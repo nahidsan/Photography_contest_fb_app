@@ -1,0 +1,59 @@
+<html>
+    <title></title>
+<head>
+<script src="script/jquery.min.js"></script>
+<script type="text/javascript" src="script/jquery.validate.min.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+ <form enctype="multipart/form-data"  action="submit.php" id="register-form" method="post">
+     <div id="">
+     <div id="header">
+
+     </div>
+    <div id="form-content">
+       <fieldset>
+            <div class="fieldgroup">
+                <label for="name">Name</label>
+                <input type="text" name="name">
+            </div>
+
+            <div class="fieldgroup">
+                <label for="email">Email</label>
+                <input type="text" name="email">
+            </div>
+	    
+            <div class="fieldgroup">
+                <label for="mobile_no">Mobile No</label>
+                <input type="text" name="mobile_no">
+            </div>	
+
+            <div class="fieldgroup">
+                <label for="txtMessage">Write Something</label>
+                <textarea style="height:120px;text-align:left;" name="txtMessage" rows="20" cols="30">
+		</textarea>
+            </div>
+
+         <div class="fieldgroup">
+                <label for="userfile">Photo</label>
+		<input name="MAX_FILE_SIZE" value="1024000" type="hidden">
+                <input name="userfile"  type="file">
+		
+            </div>
+
+
+
+            <div class="fieldgroup">
+                <input type="submit" value="Next" class="submit">
+            </div>
+       </fieldset>
+    </div>
+
+     <div id="footer">
+     </div>
+     </div>
+    
+</form>
+</body>
+</html>
